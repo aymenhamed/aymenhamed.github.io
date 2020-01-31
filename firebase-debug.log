@@ -1,0 +1,376 @@
+[debug] [2020-01-31T15:45:03.817Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:45:03.821Z] Command:       C:\Program Files\nodejs\node.exe d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-31T15:45:03.821Z] CLI Version:   7.12.1
+[debug] [2020-01-31T15:45:03.821Z] Platform:      win32
+[debug] [2020-01-31T15:45:03.821Z] Node Version:  v12.14.1
+[debug] [2020-01-31T15:45:03.822Z] Time:          Fri Jan 31 2020 16:45:03 GMT+0100 (GMT+01:00)
+[debug] [2020-01-31T15:45:03.822Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:45:03.822Z] 
+[debug] [2020-01-31T15:45:03.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T15:45:03.833Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\apache-tomcat-7.0.85\webapps\botify
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-01-31T15:45:42.109Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-31T15:45:42.109Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-31T15:45:43.108Z] <<< HTTP RESPONSE 400
+[debug] [2020-01-31T15:45:43.111Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-01-31T15:45:43.518Z] <<< HTTP RESPONSE 401
+[debug] [2020-01-31T15:45:43.519Z] <<< HTTP RESPONSE BODY
+[debug] [2020-01-31T15:45:43.521Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-01-31T15:45:43.823Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:312:28)
+    at IncomingMessage.emit (events.js:228:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-01-31T15:45:54.847Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:45:54.853Z] Command:       C:\Program Files\nodejs\node.exe d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-31T15:45:54.853Z] CLI Version:   7.12.1
+[debug] [2020-01-31T15:45:54.853Z] Platform:      win32
+[debug] [2020-01-31T15:45:54.854Z] Node Version:  v12.14.1
+[debug] [2020-01-31T15:45:54.855Z] Time:          Fri Jan 31 2020 16:45:54 GMT+0100 (GMT+01:00)
+[debug] [2020-01-31T15:45:54.855Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:45:54.855Z] 
+[debug] [2020-01-31T15:45:54.875Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T15:45:54.877Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\apache-tomcat-7.0.85\webapps\botify
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-01-31T15:46:07.171Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-31T15:46:07.171Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-31T15:46:08.382Z] <<< HTTP RESPONSE 400
+[debug] [2020-01-31T15:46:08.387Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-01-31T15:46:08.685Z] <<< HTTP RESPONSE 401
+[debug] [2020-01-31T15:46:08.686Z] <<< HTTP RESPONSE BODY
+[debug] [2020-01-31T15:46:08.688Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-01-31T15:46:09.017Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:312:28)
+    at IncomingMessage.emit (events.js:228:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-01-31T15:46:15.557Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:46:15.560Z] Command:       C:\Program Files\nodejs\node.exe d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-31T15:46:15.561Z] CLI Version:   7.12.1
+[debug] [2020-01-31T15:46:15.561Z] Platform:      win32
+[debug] [2020-01-31T15:46:15.561Z] Node Version:  v12.14.1
+[debug] [2020-01-31T15:46:15.561Z] Time:          Fri Jan 31 2020 16:46:15 GMT+0100 (GMT+01:00)
+[debug] [2020-01-31T15:46:15.562Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:46:15.562Z] 
+[debug] [2020-01-31T15:46:15.572Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T15:46:15.573Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\apache-tomcat-7.0.85\webapps\botify
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-01-31T15:46:32.809Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-31T15:46:32.811Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-31T15:46:33.848Z] <<< HTTP RESPONSE 400
+[debug] [2020-01-31T15:46:33.852Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-01-31T15:46:34.877Z] <<< HTTP RESPONSE 401
+[debug] [2020-01-31T15:46:34.878Z] <<< HTTP RESPONSE BODY
+[debug] [2020-01-31T15:46:34.880Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-01-31T15:46:35.210Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:312:28)
+    at IncomingMessage.emit (events.js:228:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
+[debug] [2020-01-31T15:48:20.587Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:48:20.591Z] Command:       C:\Program Files\nodejs\node.exe d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-31T15:48:20.591Z] CLI Version:   7.12.1
+[debug] [2020-01-31T15:48:20.591Z] Platform:      win32
+[debug] [2020-01-31T15:48:20.591Z] Node Version:  v12.14.1
+[debug] [2020-01-31T15:48:20.592Z] Time:          Fri Jan 31 2020 16:48:20 GMT+0100 (GMT+01:00)
+[debug] [2020-01-31T15:48:20.592Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:48:20.592Z] 
+[debug] [2020-01-31T15:48:20.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T15:48:20.605Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\apache-tomcat-7.0.85\webapps\botify
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-01-31T15:48:30.931Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-31T15:48:30.931Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-31T15:48:32.255Z] <<< HTTP RESPONSE 400
+[debug] [2020-01-31T15:48:32.260Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-01-31T15:48:33.195Z] <<< HTTP RESPONSE 401
+[debug] [2020-01-31T15:48:33.195Z] <<< HTTP RESPONSE BODY
+[debug] [2020-01-31T15:48:33.197Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-01-31T15:48:33.517Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:312:28)
+    at IncomingMessage.emit (events.js:228:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
+[debug] [2020-01-31T15:48:42.277Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:48:42.282Z] Command:       C:\Program Files\nodejs\node.exe d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-31T15:48:42.283Z] CLI Version:   7.12.1
+[debug] [2020-01-31T15:48:42.283Z] Platform:      win32
+[debug] [2020-01-31T15:48:42.283Z] Node Version:  v12.14.1
+[debug] [2020-01-31T15:48:42.284Z] Time:          Fri Jan 31 2020 16:48:42 GMT+0100 (GMT+01:00)
+[debug] [2020-01-31T15:48:42.284Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:48:42.285Z] 
+[debug] [2020-01-31T15:48:42.302Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T15:48:42.305Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\apache-tomcat-7.0.85\webapps\botify
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2020-01-31T15:50:38.555Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:50:38.559Z] Command:       C:\Program Files\nodejs\node.exe d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-31T15:50:38.559Z] CLI Version:   7.12.1
+[debug] [2020-01-31T15:50:38.559Z] Platform:      win32
+[debug] [2020-01-31T15:50:38.559Z] Node Version:  v12.14.1
+[debug] [2020-01-31T15:50:38.560Z] Time:          Fri Jan 31 2020 16:50:38 GMT+0100 (GMT+01:00)
+[debug] [2020-01-31T15:50:38.560Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:50:38.560Z] 
+[debug] [2020-01-31T15:50:38.574Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T15:50:38.576Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\apache-tomcat-7.0.85\webapps\botify
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-01-31T15:50:48.249Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-31T15:50:48.250Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-31T15:50:49.419Z] <<< HTTP RESPONSE 400
+[debug] [2020-01-31T15:50:49.424Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-01-31T15:50:49.825Z] <<< HTTP RESPONSE 401
+[debug] [2020-01-31T15:50:49.825Z] <<< HTTP RESPONSE BODY
+[debug] [2020-01-31T15:50:49.827Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-01-31T15:50:50.140Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:312:28)
+    at IncomingMessage.emit (events.js:228:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-01-31T15:50:56.568Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:50:56.571Z] Command:       C:\Program Files\nodejs\node.exe d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-31T15:50:56.571Z] CLI Version:   7.12.1
+[debug] [2020-01-31T15:50:56.572Z] Platform:      win32
+[debug] [2020-01-31T15:50:56.572Z] Node Version:  v12.14.1
+[debug] [2020-01-31T15:50:56.572Z] Time:          Fri Jan 31 2020 16:50:56 GMT+0100 (GMT+01:00)
+[debug] [2020-01-31T15:50:56.572Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T15:50:56.572Z] 
+[debug] [2020-01-31T15:50:56.584Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T15:50:56.585Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\apache-tomcat-7.0.85\webapps\botify
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-01-31T15:51:07.676Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-31T15:51:07.676Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-31T15:51:08.797Z] <<< HTTP RESPONSE 400
+[debug] [2020-01-31T15:51:08.800Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-01-31T15:51:09.714Z] <<< HTTP RESPONSE 401
+[debug] [2020-01-31T15:51:09.715Z] <<< HTTP RESPONSE BODY
+[debug] [2020-01-31T15:51:09.719Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-01-31T15:51:10.029Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (d:\Profiles\ahamed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:312:28)
+    at IncomingMessage.emit (events.js:228:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.

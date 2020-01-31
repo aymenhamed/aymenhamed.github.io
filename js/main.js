@@ -25,9 +25,9 @@ window.onload = () => {
   };
   window.kdata = 'lip_assistant';
   botify.lip.user.id = 'F-99998RP';
-  botify.lip.user.profile = scopeProfile.tr;
+  botify.lip.user.profile = scopeProfile;
   botify.lip.lang = 'fr';
-  window.profile = scopeProfile.tr;
+  window.profile = scopeProfile;
   window.userid = botify.lip.user.id;
   window.lang = botify.lip.lang;
 

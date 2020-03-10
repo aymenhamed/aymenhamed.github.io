@@ -1,27 +1,8 @@
 {
   "name": "4YOU POCKET",
-  "short_name": "4U",
+  "short_name": "4YOU POCKET",
   "theme_color": "#3e495b",
   "background_color": "#3c5171",
-  "share_target": {
-    "action": "compose/tweet",
-    "enctype": "multipart/form-data",
-    "method": "GET",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "aymenhamed.github.io",
-      "files": [
-        {
-          "name": "externalMedia",
-          "accept": [
-            "image/jpeg",
-            "image/png"
-          ]
-        }
-      ]
-    }
-  },
   "display": "standalone",
   "icons": [
     {

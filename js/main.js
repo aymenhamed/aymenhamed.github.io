@@ -3,6 +3,16 @@
   Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can install the PWA
+  showInstallPromotion();
+});
 $('#installApp').on('click',function (params) {
    // Hide the app provided install promotion
    hideMyInstallPromotion();

@@ -1,28 +1,502 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>LIPA</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="white"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="lipa">
-  <meta name="msapplication-TileImage" content="images/icons/icon-128x128.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
+<head>
+    <meta charset="UTF-8" />
+    <title>4YOU POCKET</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="lipa">
+    <meta name="msapplication-TileImage" content="images/icons/icon-128x128.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/smarta.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    <script src="js/modernizr-custom.js"></script>
 </head>
-<body class="fullscreen">
-  <div class="container">
-    <div class="news_manager">
-    </div>  </div>
-  <script src="js/main.js"></script>
- 
+
+<body>
+    <script>
+        const applicationServerPublicKey =
+            'BN5EXhY9Jn0o4QiuTBB-EkwvGfGDFcUfGaUTBM77JJEwI87TwvTadVBasu2_65R8IS2GRn2wGSdVuBq9LtwS6c4';
+        const privetKey = '3bnE5gYMc3JtltisYrRYqabOGmlEDG7ovkjt6kE4PTc'
+        if ('serviceWorker' in navigator && 'PushManager' in window) {
+            console.log('Service Worker and Push are supported');
+
+            navigator.serviceWorker.register('sw.js')
+                .then(function (swReg) {
+                    console.log('Service Worker is registered', swReg);
+
+                    swRegistration = swReg;
+                })
+                .catch(function (error) {
+                    console.error('Service Worker Error', error);
+                });
+        } else {
+            console.warn('Push messaging is not supported');
+            pushButton.textContent = 'Push Not Supported';
+        }
+    </script>
+    <!-- navigation -->
+    <nav class="pages-nav">
+        <div class="pages-nav__item"><a class="link link--page" href="#page-home">Start Your Day</a></div>
+        <div class="pages-nav__item"><a class="link link--page" href="#page-docu">Documents</a></div>
+        <div class="pages-nav__item"><a class="link link--page" href="#page-contacts">Contacts</a></div>
+        <div class="pages-nav__item"><a class="link link--page" href="#page-services">Services</a></div>
+        <!-- <div class="pages-nav__item"><a class="link link--page" href="#page-custom">Customization &amp; Settings</a> -->
+        </div>
+        <!-- <div class="pages-nav__item"><a class="link link--page" href="#page-training">Training</a></div> -->
+        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded"
+                href="#page-buy">PAS</a></div>
+        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded"
+                href="#page-blog">RGPD</a></div>
+        <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded"
+                href="#page-contact">QVT</a></div>
+        <div class="pages-nav__item pages-nav__item--social">
+            <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span
+                    class="text-hidden">Twitter</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span
+                    class="text-hidden">LinkedIn</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span
+                    class="text-hidden">Facebook</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span
+                    class="text-hidden">YouTube</span></a>
+        </div>
+    </nav>
+    <!-- /navigation-->
+    <!-- pages stack -->
+    <div class="pages-stack">
+        <!-- page -->
+        <div class="page" id="page-home">
+            <!-- <img class="poster" src="images/bg.jpg" alt="img01" /> -->
+
+            <!-- 4YOU POCKETheader -->
+            <header class="bp-header cf">
+                <span class="bp-header__present">4YOU POCKET</span>
+                <h1 class="bp-header__title">SYD</h1>
+                <p class="bp-header__desc">Start Your Day</p>
+                <!-- <nav class="bp-nav">
+                    <a class="bp-nav__item bp-icon bp-icon--prev" href="#" data-info="previous Blueprint"><span>Previous
+                            Blueprint</span></a>
+                    <a class="bp-nav__item bp-icon bp-icon--drop" href="#"
+                        data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+                    <a class="bp-nav__item bp-icon bp-icon--archive" href="#" data-info="Blueprints archive"><span>Go
+                            to the archive</span></a>
+                </nav> -->
+            </header>
+            <div class="homebodypage  col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+
+                <div class="pagebody  col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+                    <div class="col-md-push-4 col-lg-push-4 col-md-8 col-lg-8 col-sm-12 col-xs-12 ">
+                        <div class="  col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
+                            <div class="indicators col-md-12 col-lg-12 col-xs-12 col-sm-12 indicator-wrapper-dashboard">
+                                <div class="indicator neutral-level personal">
+
+                                    <span class="title-wrapper">
+                                        <span class="title">Mes formations</span>
+                                    </span>
+
+                                    <div class="wrapper-indicator-content">
+                                        <div class="indicator-content">
+                                            <span class="ind-value1">6 <em></em></span>
+                                            <span class="description">en 2020</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="  col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
+                            <div class="indicators col-md-12 col-lg-12 col-xs-12 col-sm-12 indicator-wrapper-dashboard">
+                                <div class="indicator warning-level personal">
+
+                                    <span class="title-wrapper">
+                                        <span class="title">Mon solde de congés</span>
+                                    </span>
+
+                                    <div class="wrapper-indicator-content">
+                                        <div class="indicator-content">
+                                            <span class="ind-value1">9<em> j</em></span>
+
+                                            <span class="ind-value2">39<em> j</em></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="  col-md-3 col-lg-3 col-sm-6 col-xs-6 col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                            <div class="indicators col-md-12 col-lg-12 col-xs-12 col-sm-12 indicator-wrapper-dashboard">
+                                <div class="indicator neutral-level personal">
+
+                                    <span class="title-wrapper">
+                                        <span class="title">Autres Absences</span>
+                                    </span>
+                                    <div class="wrapper-indicator-content">
+                                        <div class="indicator-content">
+                                            <span class="ind-value1">2<em> <b>j pris</b></em></span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="  col-md-3 col-lg-3 col-sm-6 col-xs-6 col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                            <div class="indicators col-md-12 col-lg-12 col-xs-12 col-sm-12 indicator-wrapper-dashboard">
+                                <div class="indicator neutral-level personal">
+                                    <span class="title-wrapper">
+                                        <span class="title">Absentéisme</span>
+                                    </span>
+                                    <div class="wrapper-indicator-content">
+                                        <div class="indicator-content">
+
+                                            <span class="ind-value1">2<em> %</em></span>
+                                            <span class="ind-value2">3% entreprise</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-pull-8 col-lg-pull-8 Notifications__List col-md-4 col-lg-4 col-sm-12 col-xs-12 scrollbar scrollbarstyle">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- /page -->
+        <div class="page" id="page-docu">
+            <div id="alertDiv" class="alert alert-info fader fadedOut ">
+                <p class="blinking">Analyse du document en cours<span
+                        class="ellipsis-anim"><span>.</span><span>.</span><span>.</span></span></p>
+            </div>
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">Documents</h1>
+                <p class="bp-header__desc">sMARTA V0.1 </p>
+                <p class="info">
+                    sMARTA ou Smart Analyzer vous permet de reconnaître et d'extraire automatiquement des données
+                    provenant de photos ou de scans de certificats de mariages, de pièces d'identités et d'arrêts de
+                    travail.
+                </p>
+            </header>
+            <div class="pagebody  col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+
+                <div class="widget uploadfilewidget">
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  theparentclass">
+
+                        <div id="msgInformerContainer0" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                            <input type="file" id="my_file_input" class="hidden" />
+                            <div id='my_file_output' class="hidden"></div>
+                            <button id="files-upload" type="button" class="btn ">
+                                <span class="fa fa-upload"></span>&nbsp; Sélectionner un fichier
+                            </button>
+                        </div>
+
+                    </div>
+                    <div id="uploadpanel">
+                        <div id="collapseInform">
+                            <div class="panel-body">
+                                <div class="form-step" id="step-informer">
+                                    <div id="form0">
+                                        <div class="row">
+                                            <div class="parent-manager">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  hidden errordiv">
+                        <div class="alert alert-danger col-md-12" role="alert">
+                            <B>Erreur d'analyse</B>
+                            <p>Impossible de reconnaître le type de ce document. Si l'erreur persiste avec un des documentss cité, essayer de mieux cadrer l'image ou d'augmenter la luminosité de la pièce dans le cas d'une photo prise depuis un smartphone. Dans les autres cas, nous vous invitons à contacter notre support pour une assistance immediate.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 thebodyofdoc hidden">
+                        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12   leftpart">
+                            <img src="" class="responsiveimg">
+
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12  rightpart addpadding">
+                            <h3 class="plusweight">Résultat de l'analyse</h3>
+                            <p>Il semblerait que ce document soit un <B id="filetype"></B>.</p>
+                            <p>Ce n'est pas le bon type ?<a class="redotid">Réessayer</a></p>
+                            <p class="infogroups informationhead hidden">Voici les informations que nous avons pu identifier.</p>
+                            <div class="accordion infogroups panel-group hidden" id="accordion">
+                                <div class="panel panel-default" id="panel1">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-target="#collapseOne">
+                                                &nbsp;Première personne (vous)
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <b class="nomone">Nom</b>
+                                            <input id="nomone" type="text" class="inputcheck form-control" />
+                                            <b class="prenomone">Prénom</b>
+                                            <input id="prenomone" type="text" class="inputcheck form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default" id="panel2">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-target="#collapseTwo">
+                                                &nbsp;Deuxième personne
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <b class="nomtwo">Nom</b>
+                                            <input id="nomtwo" type="text" class="inputcheck form-control" />
+                                            <b class="prenomtwo">Prénom</b>
+                                            <input id="prenomtwo" type="text" class="inputcheck form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default" id="panel3">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-target="#collapseThree">
+                                                &nbsp;
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <b class="date">Date du certificat</b>
+                                            <input id="date" type="date" class="inputcheck form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" infogroups panel-group hidden" id="ibanid">
+                                <div class="panel panel-default" id="panel1">
+
+                                    <div id="collapseiban" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <b class="ib">N° IBAN</b>
+                                            <input id="ib" type="text" class="inputcheck form-control" />
+                                            <b class="bi">BIC</b>
+                                            <input id="bi" type="text" class="inputcheck form-control" />
+                                            <b class="ic">Intitulé du compte</b>
+                                            <input id="ic" type="text" class="inputcheck form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" infogroups panel-group hidden" id="idcontrat">
+                                <b class="nomcont">Nom</b>
+                                <input id="nomcont" type="text" class="inputcheck form-control" />
+                                <b class="prenomcont">Prénom</b>
+                                <input id="prenomcont" type="text" class="inputcheck form-control" />
+                                <b class="numsec">Numéro de sécurité sociale</b>
+                                <input id="numsec" type="text" class="inputcheck form-control" />
+                                <div class="block">
+                                    <div class="radio radio-inline">
+                                        <input type="radio" name="type_arret" id="checkbox1" class="sev_check"
+                                            value="initial">
+                                        <label for="checkbox1">
+                                            <b class="checkbox1">Initial</b>
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-inline secondcheckradio">
+                                        <input type="radio" name="type_arret" id="checkbox2" class="sev_check"
+                                            value="prolongation">
+                                        <label for="checkbox2"><b class="checkbox2">Prolongation</b></label>
+                                    </div>
+
+                                </div>
+                                <b class="datedeb">Date début</b>
+                                <input id="datedeb" type="date" class="inputcheck form-control" />
+                                <b class="datefin">Date fin</b>
+                                <input id="datefin" type="date" class="inputcheck form-control" />
+
+                            </div>
+                            <div class=" infogroups panel-group hidden" id="iddomicile">
+                                <b class="add1">Adresse 1</b>
+                                <input id="add1" type="text" class="inputcheck form-control" />
+                                <b class="add2">Adresse 2</b>
+                                <input id="add2" type="text" class="inputcheck form-control" />
+                                <b class="codep">Code postal</b>
+                                <input id="codep" type="text" class="inputcheck form-control" />
+                                <b class="ville">Ville</b>
+                                <input id="ville" type="text" class="inputcheck form-control" />
+                            </div>
+                            <div class=" infogroups panel-group hidden" id="idborn">
+                                <b class="datemar">Date du mariage</b>
+                                <input id="datemar" type="date" class="inputcheck form-control" />
+                                <b class="namec">Nom du conjoint</b>
+                                <input id="namec" type="text" class="inputcheck form-control" />
+                                <b class="codep">Prénom du conjoint</b>
+                                <input id="codep" type="text" class="inputcheck form-control" />
+                            </div>
+                            <div class="rightfloat">
+                                <button class="thebtn redotid">Annuler</button>
+                                <button type="button" id="mymodal" class="thebtn" data-toggle="modal"
+                                    data-target="#thisModal">Envoyer</button>
+
+                            </div>
+
+
+                        </div>
+
+                        <div id="partials"></div>
+                        <div id="displayedmessage"></div>
+
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+        <div class="page" id="page-contacts">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">Contacts</h1>
+                <p class="bp-header__desc">BLA BLA <a
+                        href="https://k-data-front-dev-hrlab.apps.innershift.sodigital.io/">K-DATA</a></p>
+                <p class="info">
+                    "..........."
+
+                </p>
+            </header>
+            <div class="pagebody  col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+            </div>
+        </div>
+        <div class="page" id="page-services">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">Services </h1>
+                <p class="bp-header__desc">BLA BLA <a
+                        href="https://lip-prototypes-hrlab.apps.innershift.sodigital.io/app/hrlab/#/startyourday">4YOU</a>
+                </p>
+                <p class="info">
+                    "..........."
+
+                </p>
+            </header>
+        </div>
+        <!-- <div class="page" id="page-custom">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">Customization &amp; Settings</h1>
+                <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot </p>
+                <p class="info">
+                    "You have to make a conscious decision to change for your own well-being, that of your family and
+                    your country." &mdash;Bill Clinton
+                </p>
+            </header>
+        </div>
+        <div class="page" id="page-training">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">Training &amp; Learning Center</h1>
+                <p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot </p>
+                <p class="info">
+                    "The moment I began to understand what was going on with the treatment of animals, it led me more
+                    and more in the way of the path I am [on] now, which is a complete vegan." &mdash; Bryan Adams
+                </p>
+            </header>
+        </div> -->
+        <div class="page" id="page-buy">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">PAS</h1>
+                <p class="bp-header__desc">bla bla <a
+                        href="https://k-data-front-dev-hrlab.apps.innershift.sodigital.io/ontology?project=pas&title=PAS">
+                        PAS dans la K-DATA</a></p>
+                <p class="info">
+                    "..........."
+
+                </p>
+            </header>
+        </div>
+        <div class="page" id="page-blog">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">RGPD</h1>
+                <p class="bp-header__desc">bla bla <a
+                        href="https://k-data-front-dev-hrlab.apps.innershift.sodigital.io/ontology?project=rgpd&title=RGPD">
+                        RGPD dans la K-DATA</a></p>
+                <p class="info">
+                    "..........."
+
+                </p>
+            </header>
+        </div>
+        <div class="page" id="page-contact">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">QVT</h1>
+                <p class="bp-header__desc">bla bla <a
+                        href="https://k-data-front-dev-hrlab.apps.innershift.sodigital.io/ontology?project=qvt&title=QVT">
+                        QVT dans la K-DATA</a></p>
+                <p class="info">
+                    "..........."
+
+                </p>
+            </header>
+        </div>
+    </div>
+    <div class="modal fade" id="thisModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        style="display:none;">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">×</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">RGPD<img class="imgrgpd"
+                                            src="" /></h4>
+                                </div>
+                                <div class="modal-body bodyofmodal">
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default"
+                                        data-dismiss="modal">Annuler</button>
+                                    <button type="button" class="btn btn-primary"
+                                        id="sendbtn">Approuver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <!-- /pages-stack -->
+    <button class="menu-button"><span>Menu</span></button>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/dropzone.js"></script>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/smarta.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>

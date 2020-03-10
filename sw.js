@@ -18,14 +18,29 @@ const PRECACHE = 'precache-v1';
 const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
-let PRECACHE_URLS = ['js/main.js','index.html','css/style.css'];
+let PRECACHE_URLS = [
+  'js/jquery-3.4.1.min.js', 
+'index.html', 
+'css/bootstrap.min.css',
+ 'css/component.css', 
+ 'css/demo.css', 
+ 'css/smarta.css', 
+ 'css/style.css', 
+ 'js/smarta.js', 
+ 'js/bootstrap.min.js', 
+ 'js/classie.js', 
+ 'js/modernizr-custom.js',
+ 'js/main.js',
+ 'js/dropzone.js',  
+ 'js/moment.min.js'
+];
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(PRECACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS))
-      .then(self.skipWaiting())
+    .then(cache => cache.addAll(PRECACHE_URLS))
+    .then(self.skipWaiting())
   );
 });
 

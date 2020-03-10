@@ -1,10 +1,28 @@
 {
-  "name": "LIP ASSISTANT",
-  "short_name": "LIPA",
-  "theme_color": "#085593",
-  "background_color": "#2196f3",
+  "name": "4YOU POCKET",
+  "short_name": "4U",
+  "theme_color": "#3e495b",
+  "background_color": "#3c5171",
+  "share_target": {
+    "action": "compose/tweet",
+    "enctype": "multipart/form-data",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "aymenhamed.github.io",
+      "files": [
+        {
+          "name": "externalMedia",
+          "accept": [
+            "image/jpeg",
+            "image/png"
+          ]
+        }
+      ]
+    }
+  },
   "display": "standalone",
- 
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

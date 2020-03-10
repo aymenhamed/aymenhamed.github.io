@@ -1,31 +1,307 @@
-body {
-  font-family: sans-serif;
-}
+
 .news_manager {
   font-size: 14px;
   height: 100vh;
   width: 100vw;
-  color: white;
-  background-image: url(../images/bg.jpg);
-  background-size: cover;
-  background-position: center center;
+
 }
-/* Make content area fill the entire browser window */
-html,
-.fullscreen {
-  display: flex;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+#page-home {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+#page-docu{
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+header.bp-header.cf {
+    color: white;
+    font-weight: 600;
+}
+.Notification {
+    height: 5.5em;
+    margin-top: 20px;
+    transition: height 0.75s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .Notification--Close {
+    height: 0;
+  }
+  .Notification--Close .Notification__Container {
+    transform: scale(0);
+  }
+  .Notification--Optimize {
+    will-change: height;
+  }
+  .Notification--Optimize .Notification__Container {
+    will-change: transform;
+  }
+  .Notification__Container {
+    background: rgb(0,0,0,0.4);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 0.5em;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.75s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .Notification__Icon, .Notification__Name {
+    display: inline-block;
+  }
+  .Notification__Name {
+    vertical-align: middle;
+  }
+  .Notification__Icon {
+    vertical-align: middle;
+  }
+  .Notification__Icon img {
+    height: 1.5em;
+    width: 1.5em;
+  }
+  .Notification__Header {
+    overflow: hidden;
+    padding: 0.5em;
+    padding-bottom: 0;
+    font-size: 0.9em;
+  }
+  .Notification__Time {
+    float: right;
+  }
+  .Notification__App {
+    float: left;
+  }
+  .Notification__Body {
+    padding: 0.25em 0.5em;
+  }
+  .Notification__Title {
+    padding-bottom: 0.25em;
+    font-weight: bold;
+  }
+  .Notification__Content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 0.5em;
+  }
+  .Notifications {
+    max-height: 300px;
+    text-align: left;
+  }
+  .Notifications:before{
+    content: “ ”;
+ background: inherit; 
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 0; 
+ bottom: 0;
+ box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+ filter: blur(10px);
+   }
+  .Notifications__List {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 60vh;
+    min-height: 50vh;
+    OVERFLOW-Y: SCROLL;
+    padding: 0.5em;
+    box-sizing: border-box;
+  }
+  .Notifications__List:before {
+    content: 'Notifications';
+    display: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 25%;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transition: opacity 0.25s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .Notifications__List:empty:before {
+    opacity: 1;
+  }
+  .Notifications__btns {
+    height: 10%;
+    text-align: center;
+  }
+  .Notifications__addBtn, .Notifications__removeBtn {
+    padding: 0;
+    width: 45%;
+    height: 100%;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    border: none;
+    background: #c3c3c3;
+    color: #2f2f2f;
+    border-radius: 0.5em;
+  }
+
+  .pagebody {
+    padding: 0em 0vw 2em 8vw;
 }
 
-/* Center the content in the browser window */
-.container {
-  margin: auto;
-  text-align: center;
+
+/*
+ *  STYLE 7
+ */
+ .scrollbar
+ {
+  
+     overflow-y: scroll;
+ }
+ .scrollbarstyle::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     background-color: transparent;
+     border-radius: 5px;
+ }
+ 
+ .scrollbarstyle::-webkit-scrollbar
+ {
+     width: 5px;
+     background-color: transparent;
+ }
+ 
+ .scrollbarstyle::-webkit-scrollbar-thumb
+ {
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear,
+                                        left bottom,
+                                        left top,
+                                        color-stop(0.44, white),
+                                        color-stop(0.72, white),
+                                        color-stop(0.86, white));
+ }
+
+ .blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  .indicators{
+    background: rgb(0,0,0,0.4);
+    color: white;
+    margin-bottom: 10px;
+    height: 17vh;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 0.5em;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.75s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .indicator-wrapper-dashboard {
+    width: 100%;
+    position: relative;
+}
+.indicator-wrapper-dashboard .indicator.personal {
+    color: white;
+    background-color: transparent;
+}
+.indicator-wrapper-dashboard .indicator {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-width: 0;
+    border-style: solid;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.indicator-wrapper-dashboard .indicator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.indicator-wrapper-dashboard .indicator.warning-level::before {
+    background-color: #d85873;
+}
+.indicator-wrapper-dashboard .indicator .title-wrapper {
+    position: relative;
 }
 
-.title {
-  font-size: 3rem;
+.indicator-wrapper-dashboard .indicator span {
+    position: relative;
+    display: block;
+    font-family: open_sansregular, sans-serif;
 }
+.indicator-wrapper-dashboard .indicator .title-wrapper .title {
+    position: relative;
+    top: 12px;
+    width: 100%;
+    margin-bottom: 6px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 13px;
+    line-height: 16px;
+    font-style: italic;
+}
+.indicator-wrapper-dashboard .indicator .wrapper-indicator-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.indicator-wrapper-dashboard .indicator .indicator-content span.ind-value1 {
+    margin: 0 auto;
+    padding: 40px 0 6px;
+    min-width: 50px;
+    font-size: 3vw;
+    line-height: 24px;
+    font-weight: 700;
+}
+.indicator-wrapper-dashboard .indicator .indicator-content span.ind-value1 em {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+.indicator-wrapper-dashboard .indicator .indicator-content span.ind-value2 {
+    /* height: 38px; */
+    font-size: 10px;
+    line-height: 14px;
+}
+.indicator-wrapper-dashboard .indicator .indicator-content span.ind-value2::before {
+    content: "";
+    display: block;
+    margin: 0 auto 9px;
+    width: 40px;
+    height: 1px;
+    background-color: #3e495b;
+}
+.indicator-wrapper-dashboard .indicator.good-level:hover::before, .indicator-wrapper-dashboard .indicator.warning-level:hover::before {
+    height: 100%;
+}
+
+

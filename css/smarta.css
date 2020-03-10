@@ -1,0 +1,1840 @@
+
+#createSection {
+    padding: 30px;
+}
+.uploadfilewidget {
+    height: 150vh;
+}
+.footerrgpd {
+    margin-top: 18px;
+}
+.imgrgpd {
+    padding-left: 6px;
+    padding-bottom: 3px;
+}
+.uploadfilewidget .btn {
+    background-color: transparent;
+    color: black;
+    border-radius: 30px;
+    padding-top: 8px;
+    margin-right: 20px;
+    border: 2px solid black;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ .close {
+    text-shadow: none;
+}
+
+.uploadfilewidget .modal-content {
+    border: none;
+    padding: 0 !important;
+    border-radius: 0;
+}
+
+.uploadfilewidget .modal-dialog {
+    border-radius: 0;
+    border: none;
+}
+
+.uploadfilewidget .btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.uploadfilewidget .modal-header, .modal-footer {
+    border: none;
+}
+
+.uploadfilewidget .modal-header {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: OpenSans;
+    color: #252d3a;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.uploadfilewidget .modal-header {
+    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: OpenSans;
+    color: #252d3a;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+div#thisModal {
+    height: 100vh;
+}
+.modal-dialog{
+    top:-90px;
+}
+.uploadfilewidget .modal-body {
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #252d3a;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.uploadfilewidget .modal-body .listofrgpd {
+        padding-left: 15px;
+    }
+.uploadfilewidget #thisModal {
+    position: absolute;
+}
+
+.uploadfilewidget .modal {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.uploadfilewidget .modal-dialog {
+    box-shadow: 0px 5px 40px 0px rgba(0,0,0,0.3);
+}
+
+.uploadfilewidget .modal-footer {
+    text-align: left;
+}
+/*could affect other modals need to be tested*/
+ .modal-backdrop.fade.in {
+   display: none;
+}
+
+.uploadfilewidget .modal-header, .modal-body, .modal-footer {
+    background-color: #f9f9f9;
+    color: black;
+}
+.secondcheckradio {
+    margin-top: 10px !important;
+}
+@media (max-width: 991px) {
+    #msgInformerContainer0 {
+        text-align: center;
+    }
+}
+a.redotid {
+    cursor: pointer;
+}
+/* remove outline from Awesome Bootstrap Checkbox & Radio */
+.checkbox input[type="checkbox"]:focus + label::before,
+.radio input[type="radio"]:focus + label::before {
+    outline: 0px !important;
+    -webkit-appearance: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
+    margin-top: 7px !important;
+}
+/* Adjust CSS (Demo) */
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+    margin-top: 1px; /* adjust margin to place hidden input exactly same as visible input (low priority) */
+    width: 18px; /* has to be same value of .checkbox label::before and .radio label::before */
+    height: 18px; /* has to be same value of .checkbox label::before and .radio label::before */
+    margin-left: -24px; /* has to be same value of .checkbox label::before & after and radio label::before & after */
+}
+
+.checkbox,
+.radio {
+    padding-left: 24px; /* has to be same value(positive) of marign-left at .checkbox label::before & after and radio label::before & after */
+}
+
+    .checkbox label,
+    .radio label {
+        padding-left: 4px; /* horizontal spacing between input & label */
+    }
+
+        .checkbox label::before,
+        .radio label::before {
+            width: 18px; /* visible width of input */
+            height: 18px; /* visible height of input */
+            margin-left: -24px;
+        }
+
+        .checkbox label::before {
+            border-radius: 0;
+        }
+
+        .checkbox label::after,
+        .radio label::after {
+            font-size: 14px; /* size of font-awesome icon */
+            margin-left: -24px;
+        }
+
+        .checkbox label::after {
+            top: 0; /* adjust checkbox tick icon to place at middle vertically */
+        }
+
+        .radio label::after {
+            top: 3px; /* adjust radio dot icon to place at middle vertically */
+            width: 12px; /* adjut width to fit dot in center */
+            height: 12px; /* adjut height to fit dot in center */
+        }
+.block {
+    margin-bottom: 12px;
+}
+.dropdisabled {
+    opacity: .4;
+    cursor: not-allowed !important;
+}
+
+.alert-info {
+    color: #252d3a;
+    background-color: #5ab9bf;
+    border-color: #bce8f1;
+}
+
+.dz-message {
+    display: none;
+}
+
+.blinking {
+    -webkit-animation-name: blinkblink;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinkblink;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinkblink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinkblink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes blinkblink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blinkblink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.ellipsis-anim span {
+    opacity: 0;
+    -webkit-animation: ellipsis-dot 1s infinite;
+    animation: ellipsis-dot 1s infinite;
+}
+
+    .ellipsis-anim span:nth-child(1) {
+        -webkit-animation-delay: 0.0s;
+        animation-delay: 0.0s;
+    }
+
+    .ellipsis-anim span:nth-child(2) {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .ellipsis-anim span:nth-child(3) {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+@-webkit-keyframes ellipsis-dot {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ellipsis-dot {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.leftpart {
+    text-align: center;
+    MARGIN-BOTTOM: 20px;
+}
+
+.rightfloat {
+    float: right;
+}
+
+.thebtn {
+    background-color: transparent;
+    color: black;
+    border-radius: 30px;
+    padding-top: 8px;
+    margin-right: 20px;
+    border: 2px solid black;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.thebox {
+    display: -webkit-box;
+}
+
+.thebtn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.plusweight {
+    font-weight: 800;
+}
+
+.responsiveimg {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.panel-heading a:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: left;
+    color: black;
+}
+
+.panel-heading a.collapsed:after {
+    content: "\e080";
+}
+
+.rightpart {
+    background-color: lightgray;
+    color: black;
+}
+
+.fader {
+    -moz-transition: opacity 0.7s linear;
+    -o-transition: opacity 0.7s linear;
+    -webkit-transition: opacity 0.7s linear;
+    transition: opacity 0.7s linear;
+    TEXT-ALIGN: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    margin-top: -1px;
+    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.15);
+}
+
+    .fader.fadedOut {
+        opacity: 0;
+    }
+
+.dropzone, .dropzone * {
+    box-sizing: border-box;
+}
+
+.dropzone {
+    display: inline-grid;
+    position: relative;
+}
+
+    .dropzone .dz-preview {
+        position: relative;
+        display: inline-block;
+        width: 120px;
+        margin: 0.5em;
+    }
+
+        .dropzone .dz-preview .dz-progress {
+            display: block;
+            height: 15px;
+            border: 1px solid #aaa;
+        }
+
+            .dropzone .dz-preview .dz-progress .dz-upload {
+                display: block;
+                height: 100%;
+                width: 0;
+                background: green;
+            }
+
+        .dropzone .dz-preview .dz-error-message {
+            color: red;
+            display: none;
+        }
+
+        .dropzone .dz-preview.dz-error .dz-error-message, .dropzone .dz-preview.dz-error .dz-error-mark {
+            display: block;
+        }
+
+        .dropzone .dz-preview.dz-success .dz-success-mark {
+            display: block;
+        }
+
+        .dropzone .dz-preview .dz-error-mark, .dropzone .dz-preview .dz-success-mark {
+            position: absolute;
+            display: none;
+            left: 30px;
+            top: 30px;
+            width: 54px;
+            height: 58px;
+            left: 50%;
+            margin-left: -27px;
+        }
+
+.dropzone {
+    text-align: center;
+    font-size: 18px;
+}
+
+.glyphicon-download {
+    font-size: 1.5em;
+}
+
+.drop-area {
+    border: 2px solid black;
+}
+
+.clickabledrops {
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px dashed #000;
+    padding: 30px 0;
+    min-height: 250px;
+    min-width: 300px;
+}
+
+.addpadding {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.dz-error-message {
+    display: none;
+}
+
+.attachementHelp {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 5px;
+    font-size: 18px
+}
+
+.attachementInformation {
+    font-size: 14px;
+    padding-bottom: 5px
+}
+
+.form.form-control li {
+    display: inline-block;
+}
+
+
+.form.form-control.fixed {
+    padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form.form-control {
+    list-style: none;
+    border: 0;
+    padding-left: 0;
+    height: auto;
+}
+
+.attachementLabel {
+    /* padding: 8px; */
+    margin-bottom: -15px;
+    margin-left: 20px;
+    margin-top: 0;
+    background-color: #f9f9f9;
+    /* margin-bottom: 10px; */
+    border: 1px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    /* height: 38px; */
+    display: inline-block;
+}
+
+    .attachementLabel i {
+        position: relative;
+        top: 2px
+    }
+
+    .attachementLabel .attachementName {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 15px;
+        float: left;
+        font-size: 14px
+    }
+
+    .attachementLabel .attachementSize {
+        color: #808080;
+        font-style: italic
+    }
+
+    .attachementLabel .close {
+        float: right;
+        cursor: pointer
+    }
+
+.uploadfilewidget .heading {
+    position: relative;
+    display: block;
+    min-height: 2em;
+    margin-bottom: 25px;
+}
+
+.uploadfilewidget h1 {
+    font-family: "OpenSans";
+    font-size: 20px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    color: #252d3a;
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+.shrs-button-v2 {
+    height: 30px;
+    margin: 0;
+    padding: 0 18px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+    .shrs-button-v2:focus {
+        outline: none;
+    }
+
+    .shrs-button-v2.shrs-button_action {
+        background-color: #252d3a;
+        border-color: #252d3a;
+    }
+
+        .shrs-button-v2.shrs-button_action:hover {
+            background-color: #3e495b;
+            border-color: #3e495b;
+        }
+
+        .shrs-button-v2.shrs-button_action:active {
+            background-color: #61738f;
+            border-color: #61738f;
+        }
+
+    .shrs-button-v2 .shrs-button__text {
+        font-size: 14px;
+        font-family: OpenSans,Sans-Serif;
+        font-weight: 400;
+    }
+
+    .shrs-button-v2.shrs-button_action .shrs-button__text {
+        color: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:hover .shrs-button__text {
+        color: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:active .shrs-button__text {
+        color: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action .shrs-button__icon {
+        fill: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:hover .shrs-button__icon {
+        fill: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:active .shrs-button__icon {
+        fill: #fff;
+    }
+
+.shrs-transition {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out
+}
+
+.shrs-button__icon {
+    vertical-align: middle;
+}
+
+.shrs-icon.shrs-icon_size_medium {
+    width: 16px;
+    height: 16px;
+}
+
+#file-list li img {
+    width: 300px !important;
+}
+/*.uploadfilewidget{*/
+/*padding: 20px;*/
+/*font-size: 14px;*/
+/*}*/
+.demarche label.alpaca-control-label {
+    font-weight: normal;
+    font-size: 14px;
+    color: black !important;
+}
+
+.uploadfilewidget .panel {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    background-color: lightgray;
+}
+
+    .uploadfilewidget .panel.disabled .panel-heading {
+        background: url('/resources/images/black-twill.png') repeat !important;
+    }
+
+        .uploadfilewidget .panel.disabled .panel-heading .panel-title {
+            font-weight: lighter;
+            font-style: italic;
+        }
+
+
+.uploadfilewidget .panel-group .panel + .panel {
+    margin: 0;
+}
+
+.uploadfilewidget .panel:last-child {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.uploadfilewidget .panel-heading {
+    border-bottom: 1px solid white;
+    background-color: lightgray;
+}
+
+.uploadfilewidget input,
+.uploadfilewidget select {
+    box-shadow: none;
+}
+
+.uploadfilewidget .form-step-validate > div {
+    position: relative;
+    overflow: hidden;
+}
+
+    .uploadfilewidget .form-step-validate > div ul.form-summary {
+        display: inline;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+        font-size: 14px;
+    }
+
+        .uploadfilewidget .form-step-validate > div ul.form-summary li {
+            padding: 0 10px;
+            border-left: solid 1px black;
+            line-height: 12px;
+        }
+
+            .uploadfilewidget .form-step-validate > div ul.form-summary li:first-child {
+                border-left: none;
+                padding-left: 0;
+            }
+
+.uploadfilewidget .twitter-typeahead {
+    display: inherit !important;
+}
+    /** 
+* add scroll to menu 
+**/
+    .uploadfilewidget .twitter-typeahead .tt-dropdown-menu {
+        max-height: 100px;
+        overflow-y: auto;
+    }
+
+@-webkit-keyframes InteractivDesign {
+    0% {
+        box-shadow: inset 0px 0px 0px 3px darkorange;
+    }
+
+    50% {
+        box-shadow: inset 0px 0px 0px 0px darkorange;
+    }
+
+    100% {
+        box-shadow: inset 0px 0px 0px 3px darkorange;
+    }
+}
+
+.uploadfilewidget .has-error .control-label,
+.uploadfilewidget .has-succ .control-label {
+    color: black;
+}
+
+.uploadfilewidget .has-error .form-control,
+.uploadfilewidget .has-error .form-control:focus,
+.uploadfilewidget .has-error .select2-container--default .select2-selection--single {
+    border-color: #F1593A;
+}
+
+.uploadfilewidget .has-success .form-control,
+.uploadfilewidget .has-success .form-control:focus {
+    border-color: #5CA03E;
+}
+
+.uploadfilewidget .has-error .form-control-feedback,
+.uploadfilewidget .has-error .help-block {
+    color: #F1593A;
+}
+
+.uploadfilewidget .has-success .form-control-feedback,
+.uploadfilewidget .has-success .help-block {
+    color: #5CA03E;
+}
+
+.uploadfilewidget .has-feedback .form-control {
+    padding-right: 0;
+}
+
+.uploadfilewidget .help-block {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.uploadfilewidget .form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.m-r-sm {
+    margin-right: 10px;
+}
+
+.m-r-md {
+    margin-right: 18px;
+}
+
+.img-justif-addr {
+    width: 100%;
+}
+
+.uploadfilewidget .form-control,
+.select2-container--default .select2-selection--single,
+.uploadfilewidget .select2-dropdown {
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #06101F;
+    box-shadow: none !important;
+}
+
+.uploadfilewidget .has-success .select2-container--default .select2-selection--single {
+    border-color: #3c763d;
+}
+
+.uploadfilewidget .select2-container {
+    width: 100% !important;
+    display: block;
+    z-index: 99;
+}
+
+#prolonContainer1 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    #prolonContainer1 {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+
+#prolonContainer1 ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 0;
+}
+
+@media (min-width: 576px) {
+    #prolonContainer1 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    #prolonContainer1 ul {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+#prolonContainer1 li {
+    width: 315px;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1.5px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+/* Button container */
+.progress-button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    min-width: 250px;
+    margin: 10px;
+}
+
+    /* Button style */
+    .progress-button button {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100px;
+        height: 30px;
+        border: 2px solid #1ECD97;
+        border-radius: 40px;
+        background: transparent;
+        color: #1ECD97;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+        transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+    }
+
+        .progress-button button:hover {
+            background-color: #1ECD97;
+            color: #fff;
+        }
+
+        .progress-button button:focus {
+            outline: none;
+        }
+
+        /* Text (transition for when returning to initial state) */
+        .progress-button button span {
+            -webkit-transition: opacity 0.3s 0.1s;
+            transition: opacity 0.3s 0.1s;
+        }
+
+    /* Common style of SVGs */
+    .progress-button svg {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        -webkit-transform: translateX(-0%);
+        transform: translateX(-0%);
+        pointer-events: none;
+    }
+
+        .progress-button svg path {
+            opacity: 0;
+            fill: none;
+        }
+
+        .progress-button svg.progress-circle path {
+            stroke: #1ECD97;
+            stroke-width: 5px;
+        }
+
+        .progress-button svg.checkmark path,
+        .progress-button svg.cross path {
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-width: 2px;
+            -webkit-transition: opacity 0.1s;
+            transition: opacity 0.1s;
+        }
+
+/* Loading, success and error effects */
+.loading.progress-button button {
+    width: 40px; /* make a circle */
+    border-width: 5px;
+    border-color: #ddd;
+    background-color: transparent;
+    color: #fff;
+}
+
+.loading.progress-button span {
+    -webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+}
+
+.loading.progress-button span,
+.success.progress-button span,
+.error.progress-button span {
+    opacity: 0; /* keep it hidden in all states */
+}
+
+.success.progress-button button,
+.error.progress-button button {
+    -webkit-transition: background-color 0.3s, width 0.1s, border-width 0.3s;
+    transition: background-color 0.3s, width 0.1s, border-width 0.3s;
+}
+
+.success.progress-button button {
+    border-color: #1ECD97;
+    background-color: #1ECD97;
+}
+
+.error.progress-button button {
+    border-color: #FB797E;
+    background-color: #FB797E;
+}
+
+.loading.progress-button svg.progress-circle path,
+.success.progress-button svg.checkmark path,
+.error.progress-button svg.cross path {
+    opacity: 1;
+    -webkit-transition: stroke-dashoffset 0.3s;
+    transition: stroke-dashoffset 0.3s;
+}
+
+/* Optional elastic effect for the width of the button */
+.elastic.progress-button button {
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+}
+
+.loading.elastic.progress-button button {
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+}
+
+.input-file-hide {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.labelcustominputfile {
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #6582ad;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+/*
+ * The MIT License
+ * Copyright (c) 2012 Matias Meno <m@tias.me>
+ */
+.dropzone, .dropzone * {
+    box-sizing: border-box;
+}
+
+.dropzone {
+    position: relative;
+}
+
+    .dropzone .dz-preview {
+        position: relative;
+        display: inline-block;
+        width: 120px;
+        margin: 0.5em;
+    }
+
+        .dropzone .dz-preview .dz-progress {
+            display: block;
+            height: 15px;
+            border: 1px solid #aaa;
+        }
+
+            .dropzone .dz-preview .dz-progress .dz-upload {
+                display: block;
+                height: 100%;
+                width: 0;
+                background: green;
+            }
+
+        .dropzone .dz-preview .dz-error-message {
+            color: red;
+            display: none;
+        }
+
+        .dropzone .dz-preview .dz-error-mark, .dropzone .dz-preview .dz-success-mark {
+            position: absolute;
+            display: none;
+            left: 30px;
+            top: 30px;
+            width: 54px;
+            height: 58px;
+            left: 50%;
+            margin-left: -27px;
+        }
+
+.dropzone {
+    text-align: center;
+    font-size: 18px;
+}
+
+.textbody {
+    margin: 0;
+    padding: 0;
+}
+
+.dz-preview {
+    display: none !important;
+}
+
+.glyphicon-upload {
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+.theou {
+    margin-top: 70px;
+}
+[data-useragent*=iPhone] .theou,
+[data-useragent*=iPad] .theou,
+[data-useragent*=phone] .theou,
+[data-useragent*=mobile] .theou,
+[data-useragent*=Mobile] .theou,
+.mobile .theou,
+[data-useragent*=tablet] .theou,
+[data-useragent*=Android] .theou,
+[data-useragent*=iPad] .dropzone,
+[data-useragent*=phone] .dropzone,
+[data-useragent*=mobile] .dropzone,
+[data-useragent*=Mobile] .dropzone,
+[data-useragent*=tablet] .dropzone,
+[data-useragent*=Android] .dropzone,
+.mobile .dropzone{
+    display: none;
+}
+.thedropclass {
+    min-width: 40VH;
+}
+
+.attachementHelp {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 5px;
+    font-size: 18px
+}
+
+.attachementInformation {
+    font-size: 14px;
+    padding-bottom: 5px
+}
+
+.form.form-control li {
+    display: inline-block;
+}
+
+
+.form.form-control.fixed {
+    padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form.form-control {
+    list-style: none;
+    border: 0;
+    padding-left: 0;
+    height: auto;
+}
+
+.process-form .form-control,
+.select2-container--default .select2-selection--single,
+.process-form .select2-dropdown {
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #06101F;
+    box-shadow: none !important;
+}
+
+.attachementLabel {
+    margin-bottom: -15px;
+    margin-left: 20px;
+    margin-top: 0;
+    background-color: #f9f9f9;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+    .attachementLabel i {
+        position: relative;
+        top: 2px
+    }
+
+    .attachementLabel .attachementName {
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 15px;
+        float: left;
+        font-size: 14px
+    }
+
+    .attachementLabel .attachementSize {
+        color: #808080;
+        font-style: italic
+    }
+
+    .attachementLabel .close {
+        float: right;
+        cursor: pointer
+    }
+
+.uploadfilewidget .heading {
+    position: relative;
+    display: block;
+    min-height: 2em;
+    margin-bottom: 25px;
+}
+
+.uploadfilewidget h1 {
+    font-family: "OpenSans";
+    font-size: 20px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    color: #252d3a;
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+.shrs-button-v2 {
+    height: 30px;
+    margin: 0;
+    padding: 0 18px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+    .shrs-button-v2:focus {
+        outline: none;
+    }
+
+    .shrs-button-v2.shrs-button_action {
+        background-color: #252d3a;
+        border-color: #252d3a;
+    }
+
+        .shrs-button-v2.shrs-button_action:hover {
+            background-color: #3e495b;
+            border-color: #3e495b;
+        }
+
+        .shrs-button-v2.shrs-button_action:active {
+            background-color: #61738f;
+            border-color: #61738f;
+        }
+
+    .shrs-button-v2 .shrs-button__text {
+        font-size: 14px;
+        font-family: OpenSans,Sans-Serif;
+        font-weight: 400;
+    }
+
+    .shrs-button-v2.shrs-button_action .shrs-button__text {
+        color: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:hover .shrs-button__text {
+        color: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:active .shrs-button__text {
+        color: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action .shrs-button__icon {
+        fill: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:hover .shrs-button__icon {
+        fill: #fff;
+    }
+
+    .shrs-button-v2.shrs-button_action:active .shrs-button__icon {
+        fill: #fff;
+    }
+
+.shrs-transition {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out
+}
+
+.shrs-button__icon {
+    vertical-align: middle;
+}
+
+.shrs-icon.shrs-icon_size_medium {
+    width: 16px;
+    height: 16px;
+}
+
+#file-list li img {
+    width: 300px !important;
+}
+/*.uploadfilewidget{*/
+/*padding: 20px;*/
+/*font-size: 14px;*/
+/*}*/
+.demarche label.alpaca-control-label {
+    font-weight: normal;
+    font-size: 14px;
+    color: black !important;
+}
+
+.uploadfilewidget .panel {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+    .uploadfilewidget .panel.disabled .panel-heading {
+        background: url('/resources/images/black-twill.png') repeat !important;
+    }
+
+        .uploadfilewidget .panel.disabled .panel-heading .panel-title {
+            font-weight: lighter;
+            font-style: italic;
+        }
+
+
+.uploadfilewidget .panel-group .panel + .panel {
+    margin: 0;
+}
+
+.uploadfilewidget .panel:last-child {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#files-upload {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin-top: 70px;
+}
+
+.uploadfilewidget .panel-heading.open {
+    background-color: #252d3a;
+    color: #fff;
+}
+
+.uploadfilewidget .panel-heading .panel-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 2px;
+}
+/*
+.uploadfilewidget .panel-heading .btn-open-step {
+    float: right;
+    color: black;
+}*/
+.uploadfilewidget .panel-heading + .panel-collapse .panel-body {
+    border: none;
+}
+/*
+.uploadfilewidget .panel-heading .heading-item:first-child {
+    width: 92%;
+}*/
+.uploadfilewidget .panel-heading .heading-item {
+    vertical-align: middle;
+    height: 64px;
+}
+
+.uploadfilewidget .panel-heading .heading-btn {
+    position: absolute;
+    top: 34%;
+    right: 36px;
+}
+
+.uploadfilewidget input,
+.uploadfilewidget select {
+    box-shadow: none;
+}
+
+.uploadfilewidget .form-step-validate > div {
+    position: relative;
+    overflow: hidden;
+}
+
+    .uploadfilewidget .form-step-validate > div ul.form-summary {
+        display: inline;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+        font-size: 14px;
+    }
+
+        .uploadfilewidget .form-step-validate > div ul.form-summary li {
+            padding: 0 10px;
+            border-left: solid 1px black;
+            line-height: 12px;
+        }
+
+            .uploadfilewidget .form-step-validate > div ul.form-summary li:first-child {
+                border-left: none;
+                padding-left: 0;
+            }
+
+.uploadfilewidget .twitter-typeahead {
+    display: inherit !important;
+}
+    /** 
+* add scroll to menu 
+**/
+    .uploadfilewidget .twitter-typeahead .tt-dropdown-menu {
+        max-height: 100px;
+        overflow-y: auto;
+    }
+
+@-webkit-keyframes InteractivDesign {
+    0% {
+        box-shadow: inset 0px 0px 0px 3px darkorange;
+    }
+
+    50% {
+        box-shadow: inset 0px 0px 0px 0px darkorange;
+    }
+
+    100% {
+        box-shadow: inset 0px 0px 0px 3px darkorange;
+    }
+}
+
+/**
+ * INPUT
+ */
+/*.uploadfilewidget .form-control {
+    border-radius: 0;
+    height: 46px;
+    font-weight: lighter;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    -webkit-transition : all ease-in-out .15s;
+    -moz-transition : all ease-in-out .15s;
+    -o-transition : all ease-in-out .15s;
+    transition : all ease-in-out .15s;
+}
+
+.uploadfilewidget select * {
+    background-color:#000;
+    color:#FFF;
+    font-weight: lighter;
+    padding: 12px;
+}
+
+.uploadfilewidget .form-control:hover {
+    background-color: #ECECEC;
+}
+
+.uploadfilewidget .has-error .form-control, .uploadfilewidget .has-success .form-control  {
+    box-shadow: none !important;
+}
+
+.uploadfilewidget .form-control:focus, .uploadfilewidget .has-error .form-control:focus, .uploadfilewidget .has-success .form-control:focus {
+    outline: none !important;
+    box-shadow: none;
+    background-color: #ECECEC;
+}
+
+.uploadfilewidget .form-control:focus {
+    border-color: black;
+}
+
+.uploadfilewidget .bar  { position:relative; display:block; width:100%; }
+
+.uploadfilewidget .bar:after   {
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:0px; 
+    background-color:black; 
+    position:absolute;
+    transition:0.2s ease all; 
+}
+
+.uploadfilewidget .form-control:focus ~ .bar:after {
+    width:100%;
+}
+
+.uploadfilewidget .has-error .bar:after {
+    background-color:#a94442; 
+}
+
+.uploadfilewidget .has-success .bar:after {
+    background-color:#3c763d; 
+}
+*/
+.uploadfilewidget .has-error .control-label,
+.uploadfilewidget .has-succ .control-label {
+    color: black;
+}
+
+.uploadfilewidget .has-error .form-control,
+.uploadfilewidget .has-error .form-control:focus,
+.uploadfilewidget .has-error .select2-container--default .select2-selection--single {
+    border-color: #F1593A;
+}
+
+.uploadfilewidget .has-success .form-control,
+.uploadfilewidget .has-success .form-control:focus {
+    border-color: #5CA03E;
+}
+
+.uploadfilewidget .has-error .form-control-feedback,
+.uploadfilewidget .has-error .help-block {
+    color: #F1593A;
+}
+
+.uploadfilewidget .has-success .form-control-feedback,
+.uploadfilewidget .has-success .help-block {
+    color: #5CA03E;
+}
+
+.uploadfilewidget .has-feedback .form-control {
+    padding-right: 0;
+}
+
+.uploadfilewidget .help-block {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.uploadfilewidget .form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.m-r-sm {
+    margin-right: 10px;
+}
+
+.m-r-md {
+    margin-right: 18px;
+}
+
+.img-justif-addr {
+    width: 100%;
+}
+
+.alert {
+    border-radius: 0 !important;
+}
+
+.neededinput {
+    border: 1px solid #ff0000 !important;
+}
+
+.neededinputb {
+    color: #ff0000 !important;
+}
+
+.uploadfilewidget .form-control,
+.select2-container--default .select2-selection--single,
+.uploadfilewidget .select2-dropdown {
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    color: #06101F;
+    box-shadow: none !important;
+}
+
+.uploadfilewidget .has-success .select2-container--default .select2-selection--single {
+    border-color: #3c763d;
+}
+
+.uploadfilewidget .select2-container {
+    width: 100% !important;
+    display: block;
+    z-index: 99;
+}
+
+#prolonContainer1 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    #prolonContainer1 {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+
+#prolonContainer1 ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 0;
+}
+
+@media (min-width: 576px) {
+    #prolonContainer1 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    #prolonContainer1 ul {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+#prolonContainer1 li {
+    width: 315px;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1.5px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+/* Button container */
+.progress-button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    min-width: 250px;
+    margin: 10px;
+}
+
+    /* Button style */
+    .progress-button button {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100px;
+        height: 30px;
+        border: 2px solid #1ECD97;
+        border-radius: 40px;
+        background: transparent;
+        color: #1ECD97;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+        transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+    }
+
+        .progress-button button:hover {
+            background-color: #1ECD97;
+            color: #fff;
+        }
+
+        .progress-button button:focus {
+            outline: none;
+        }
+
+        /* Text (transition for when returning to initial state) */
+        .progress-button button span {
+            -webkit-transition: opacity 0.3s 0.1s;
+            transition: opacity 0.3s 0.1s;
+        }
+
+    /* Common style of SVGs */
+    .progress-button svg {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        -webkit-transform: translateX(-0%);
+        transform: translateX(-0%);
+        pointer-events: none;
+    }
+
+        .progress-button svg path {
+            opacity: 0;
+            fill: none;
+        }
+
+        .progress-button svg.progress-circle path {
+            stroke: #1ECD97;
+            stroke-width: 5px;
+        }
+
+        .progress-button svg.checkmark path,
+        .progress-button svg.cross path {
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-width: 2px;
+            -webkit-transition: opacity 0.1s;
+            transition: opacity 0.1s;
+        }
+
+/* Loading, success and error effects */
+.loading.progress-button button {
+    width: 40px; /* make a circle */
+    border-width: 5px;
+    border-color: #ddd;
+    background-color: transparent;
+    color: #fff;
+}
+
+.loading.progress-button span {
+    -webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+}
+
+.loading.progress-button span,
+.success.progress-button span,
+.error.progress-button span {
+    opacity: 0; /* keep it hidden in all states */
+}
+
+.success.progress-button button,
+.error.progress-button button {
+    -webkit-transition: background-color 0.3s, width 0.1s, border-width 0.3s;
+    transition: background-color 0.3s, width 0.1s, border-width 0.3s;
+}
+
+.success.progress-button button {
+    border-color: #1ECD97;
+    background-color: #1ECD97;
+}
+
+.error.progress-button button {
+    border-color: #FB797E;
+    background-color: #FB797E;
+}
+
+.loading.progress-button svg.progress-circle path,
+.success.progress-button svg.checkmark path,
+.error.progress-button svg.cross path {
+    opacity: 1;
+    -webkit-transition: stroke-dashoffset 0.3s;
+    transition: stroke-dashoffset 0.3s;
+}
+
+/* Optional elastic effect for the width of the button */
+.elastic.progress-button button {
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+}
+
+.loading.elastic.progress-button button {
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+}
+
+.input-file-hide {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 40px 40px;
+    display: inline-block;
+    overflow: inherit;
+    color: white;
+    padding: 0.625rem 0.8rem;
+}
+
+.labelcustominputfile {
+    border-radius: 40px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #6582ad;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
